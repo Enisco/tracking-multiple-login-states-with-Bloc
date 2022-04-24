@@ -1,4 +1,4 @@
-# flutter_bloc_tutorial: Tracking Multiple LogIb States with BLoC
+# flutter_bloc_tutorial: Tracking Multiple LogIn States with BLoC
 
 A Flutter BLoC Demo project.
 
