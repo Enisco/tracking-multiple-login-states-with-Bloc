@@ -1,16 +1,7 @@
-# flutter_bloc_tutorial
+# flutter_bloc_tutorial: Tracking Multiple LogIn States with BLoC
 
-A new Flutter project.
+A Flutter BLoC Demo project.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+This project uses flutter BLoC package to track and handle the 5 log in states being implemented in the CoVaMs web project at https://github.com/Enisco/covams_web .
