@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:flutter_bloc_tutorial/add_data.dart';
 import 'package:flutter_bloc_tutorial/blocs/login_state_bloc.dart';
+import 'package:flutter_bloc_tutorial/blocs/login_string_bloc.dart';
 import 'package:flutter_bloc_tutorial/screens/home.dart';
 
 class SecondScreen extends StatelessWidget {
@@ -17,7 +19,8 @@ class SecondScreen extends StatelessWidget {
             actions: [
               Center(
                 child: Text(
-                  loginStatesString[state],
+                  // loginStatesString[state],
+                  loginString,
                   style: const TextStyle(fontSize: 20, color: Colors.amber),
                 ),
               ),
@@ -36,6 +39,11 @@ class SecondScreen extends StatelessWidget {
                   child: const Text("Logged Out"),
                   onPressed: () {
                     _counterBloc.add(LoggedOut());
+                    loginString = 'My Account';
+                    Navigator.of(context).pushAndRemoveUntil(
+                        MaterialPageRoute(
+                            builder: (context) => const AddData()),
+                        (Route<dynamic> route) => false);
                   },
                 ),
                 TextButton(
@@ -75,7 +83,8 @@ class ThirdScreen extends StatelessWidget {
             actions: [
               Center(
                 child: Text(
-                  loginStatesString[state],
+                  // loginStatesString[state],
+                  loginString,
                   style: const TextStyle(fontSize: 20, color: Colors.amber),
                 ),
               ),
